@@ -44,7 +44,11 @@ public class CardGame02 {
 			System.out.println("player2은 원페어가 아닙니다.");
 		}
 		
-		
+		if (p1.isOnepair() > p2.isOnepair()) {
+			System.out.println("player1이 이겼습니다.");
+		} else {
+			System.out.println("player2가 이겼습니다.");
+		}
 		
 	}
 
