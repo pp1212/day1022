@@ -15,10 +15,10 @@ public class Player {
 	
 	//원페어인지 판별하여
 	//누가 이겼는지 처리하려면 원페어인 숫자를 반환하려고 함
-	//숫자가 2~10까지는 Integer.parInt() 하면 정수로 만들어 주는데 문제가 옶음
+	//숫자가 2~10까지는 Integer.parseInt() 하면 정수로 만들어 주는데 문제가 없음
 	//그런데 카드의 숫자가 "Jack","Queen","King","Ace" 이런것들은 Integer.parseInt를 못함
-	//그래서 "2" key로 하고 2를 value로 하는 map을 만듬~
-	//"Jack"이라는 key에는 11이라는 value를 담음
+	//그래서 "2"를 key로 하고 2를 value로 하는 map을 만듬
+	//~ "Jack"이라는 key에는 11이라는 value를 담음
 	public int isOnepair() {
 		
 		//카드의 숫자를 map의key로 함
@@ -54,7 +54,6 @@ public class Player {
 	public void showCards() {
 		System.out.println(list);
 	}
-	
 	
 	
 }
